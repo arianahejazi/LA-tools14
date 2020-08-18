@@ -43,13 +43,14 @@ body , *{
   background-color: var(--white);
   border: 1px solid var(--light-gray)!important;
   border-radius: 50px!important;
+  position: relative!important;
 }
 
 #hint .pin{
     top: -8px !important;
-    left: 34% !important;
     box-shadow: none !important;
     background:var(--orange)!important;
+    left: calc(100% - 300px/2) !important;
 }
 
 .wooden-border {
@@ -114,11 +115,12 @@ body , *{
   display: none !important;
 }
 
-.key img[src='frame_disabled.png']:before{
-  content: " "!important;
-  width: 50px!important;
-  height: 50px!important;
-  background:var(--red)!important;
+.key img[src='frame_disabled.png']{
+  border: 2px solid var(--light-red)!important;
+  border-radius: 50px!important;
+  padding: 0!important;
+  margin: 0 !important;
+  background: var(--light-red-10)!important;
 }
 
 .fading-letter.red {
