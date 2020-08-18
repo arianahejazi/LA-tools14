@@ -40,9 +40,9 @@ body , *{
 }
 
 #hint{
-  background: var(--white);
-  border: 1px solid var(--light-gray);
-  border-radius: 50px;
+  background: var(--white)!important;
+  border: 1px solid var(--light-gray)!important;
+  border-radius: 50px!important;
 }
 
 #hint .pin{
@@ -80,6 +80,8 @@ body , *{
 
 .fading-letter{
   color: var(--light-black);
+  filter: none!important;
+  -webkit-filter: none!important;
 }
 
 .key {
@@ -113,9 +115,10 @@ body , *{
 }
 
 .key img[src='frame_disabled.png']::after{
-  content: "/"!important;
+  content: " "!important;
   width: 50px!important;
   height: 50px!important;
+  background:var(--red)!important;
 }
 
 .fading-letter.red {
@@ -235,4 +238,3 @@ td{
     background: -webkit-gradient(linear, left top, left bottom, from(var(--white)),to(var(--black)));
     background: linear-gradient(to bottom, var(--white),var(--black));
 }
-
