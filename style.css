@@ -36,10 +36,16 @@ body , *{
 
 .chalkboard {
   background-image: none !important;
-  background-color: var(--white) !important;
+  background-color: var(--light-gray-10) !important;
 }
 
-#hint .pin {
+#hint{
+  background: var(--white);
+  border: 2px solid var(--light-gray);
+  border-radius: 50px;
+}
+
+#hint .pin{
     top: -8px !important;
     left: 34% !important;
 }
@@ -54,6 +60,8 @@ body , *{
 #gallows {
   right: -8% !important;
   top: -6% !important;
+  filter: drop-shadow(0px 0 0px var(--tifany));
+  -webkit-filter: drop-shadow(0px 0 0px var(--tifany));
 }
 
 #lines{
@@ -68,14 +76,39 @@ body , *{
 
 .key {
   margin: 1px 5px !important;
+  border: 1.5px solid var(--white)!important;
+  height: 50px!important;
+  border-radius: 50px!important;
+  padding: 0!important;
+  margin: 4px!important;
+  vertical-align: middle!important;
+}
+
+.letter{
+  font-family: sans-serif!important;
+  color: var(--light-black)!important;
 }
 
 .key img {
   margin: 7px 3px !important;
 }
 
+.key img[src='frame_disabled.png']{
+  background:red!important;
+}
+
 .fading-letter.red {
   color: var(--red) !important;
+}
+
+#nextRoundDialog {
+  height: auto !important;
+  width: 90% !important;
+  background: rgb(255 255 255) !important;
+  padding: 10% !important;
+  text-align: center !important;
+  margin: 42% auto !important;
+  border-radius: 50px !important;
 }
 
 /* check solve button */
