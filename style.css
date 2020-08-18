@@ -60,6 +60,10 @@ body , *{
   padding: 15px!important;
 }
 
+.resizeText{
+  color: var(--light-red) !important;
+}
+
 #gallows {
   right: -8% !important;
   top: -6% !important;
