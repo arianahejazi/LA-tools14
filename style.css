@@ -41,13 +41,15 @@ body , *{
 
 #hint{
   background: var(--white);
-  border: 2px solid var(--light-gray);
+  border: 1px solid var(--light-gray);
   border-radius: 50px;
 }
 
 #hint .pin{
     top: -8px !important;
     left: 34% !important;
+    box-shadow: none !important;
+    background:var(--orange)!important;
 }
 
 .wooden-border {
@@ -72,16 +74,30 @@ body , *{
 
 .line{
   margin: 0 5px !important;
+  filter: drop-shadow(0px 0px var(--black))!important;
+  -webkit-filter: drop-shadow(0px 0px var(--black))!important;
+}
+
+.fading-letter{
+  color: var(--light-black);
 }
 
 .key {
+  width: 50px!important;
+  height: 50px!important;
   margin: 1px 5px !important;
-  border: 1.5px solid var(--white)!important;
+  border: 1.5px solid var(--light-gray-10)!important;
   height: 50px!important;
   border-radius: 50px!important;
   padding: 0!important;
   margin: 4px!important;
   vertical-align: middle!important;
+  background:var(--white);
+  border-radius: 50px !important;
+  -webkit-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  -ms-border-radius: 50px !important;
+  -o-border-radius: 50px !important;
 }
 
 .letter{
@@ -92,9 +108,14 @@ body , *{
 .key img {
   margin: 7px 3px !important;
 }
+.key img[src='frame_enabled.png']{
+  display: none !important;
+}
 
-.key img[src='frame_disabled.png']{
-  background:red!important;
+.key img[src='frame_disabled.png']::after{
+  content: "/"!important;
+  width: 50px!important;
+  height: 50px!important;
 }
 
 .fading-letter.red {
@@ -102,13 +123,31 @@ body , *{
 }
 
 #nextRoundDialog {
-  height: auto !important;
-  width: 90% !important;
-  background: rgb(255 255 255) !important;
-  padding: 10% !important;
+  height: 50vh;
+  width: 97% !important;
+  background: var(--white) !important;
+  padding: 157px 30px !important;
   text-align: center !important;
-  margin: 42% auto !important;
+  margin: 2% auto !important;
   border-radius: 50px !important;
+  border: 1px solid var(--light-gray)!important;
+}
+
+#nextRoundBtn{
+  font-size: 20px!important;
+  width: 218px!important;
+  margin: 8px 0 0!important;
+  padding: 20px 25px!important;
+  border: none!important;
+  color: var(--white)!important;
+  background: var(--blue);
+  border-radius: 20px!important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  -ms-border-radius: 50px !important;
+  -o-border-radius: 50px !important;
 }
 
 /* check solve button */
