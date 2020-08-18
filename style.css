@@ -40,7 +40,7 @@ body , *{
 }
 
 #hint{
-  background: var(--white)!important;
+  background-color: var(--white);
   border: 1px solid var(--light-gray)!important;
   border-radius: 50px!important;
 }
@@ -80,8 +80,8 @@ body , *{
 
 .fading-letter{
   color: var(--light-black);
-  filter: none!important;
-  -webkit-filter: none!important;
+  filter:drop-shadow(0px 0 0px var(--white))!important;
+  -webkit-filter:drop-shadow(0px 0 0px var(--white))!important;
 }
 
 .key {
@@ -114,7 +114,7 @@ body , *{
   display: none !important;
 }
 
-.key img[src='frame_disabled.png']::after{
+.key img[src='frame_disabled.png']:before{
   content: " "!important;
   width: 50px!important;
   height: 50px!important;
