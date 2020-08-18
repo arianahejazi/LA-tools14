@@ -79,14 +79,12 @@ body , *{
 
 .line{
   margin: 0 5px !important;
-  filter: drop-shadow(0px 0px var(--black))!important;
-  -webkit-filter: drop-shadow(0px 0px var(--black))!important;
+  filter: drop-shadow(0px 0px var(--gray))!important;
+  -webkit-filter: drop-shadow(0px 0px var(--gray))!important;
 }
 
 .fading-letter{
   color: var(--light-black);
-  filter:drop-shadow(0px 0 0px var(--white))!important;
-  -webkit-filter:drop-shadow(0px 0 0px var(--white))!important;
 }
 
 .key {
