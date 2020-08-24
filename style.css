@@ -19,6 +19,7 @@
   --light-red-10:#fde3e3;
   --light-red:#ffacaa;
   --red:#fd7a91;
+  --pink:#ff1fb9;
 }
 
 body , *{
@@ -67,8 +68,8 @@ body , *{
 #gallows {
   right: -8% !important;
   top: -6% !important;
-  filter: drop-shadow(0px 0 0px var(--tifany));
-  -webkit-filter: drop-shadow(0px 0 0px var(--tifany));
+  filter: drop-shadow(0px 0 0px var(--pink));
+  -webkit-filter: drop-shadow(0px 0 0px var(--pink));
 }
 
 #lines{
